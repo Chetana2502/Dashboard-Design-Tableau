@@ -1,44 +1,25 @@
 # Dashboard Design Tableau
 
-## 📌 Overview
-This project is part of my internship tasks.  
-The goal was to design an **interactive Tableau dashboard** for business stakeholders using a sales dataset (Superstore / Kaggle Sales_Financial data).  
+## Overview
+Interactive dashboard built with Tableau (Superstore / sales dataset).  
+Covers: KPIs (Sales, Profit, Growth), time-series, category & geographic analysis, segmentation, and business recommendations.
 
-The dashboard provides insights into **Sales performance, Orders, Growth, Categories, Geography, and Segments**, and is designed with interactivity and storytelling in mind.
+## Files
+- `data/SalesFinancial.csv` – raw dataset
+- `workbook/SalesFinancial.twbx` – Tableau packaged workbook
+- `exports/Dashboard.pdf` – exported dashboard PDF
 
+## How to open
+1. Install Tableau Public / Desktop.
+2. Open `workbook/SalesFinancial.twbx` in Tableau.
+3. Interact with filters (Region, Year, Category), use navigation buttons at top.
 
----
+## How I built it
+- Data cleaning: parsed dates, removed duplicates, handled missing values, created `wait_days`, computed KPIs.
+- Visuals: KPI row, Sales trend, Category performance, Map by State, Segment analysis, Top customers scatter.
+- Interactivity: Filters (Region, Year), highlight & filter actions, navigation buttons.
 
-## 🚀 Features
-- **KPI Cards** – Total Sales, Total Orders, Sales per Order, Growth %
-- **Time Series** – Sales trend with YoY growth
-- **Category Performance** – Best and worst-performing categories
-- **Geographic Map** – Sales distribution across US states
-- **Segment Analysis** – Sales by Customer Segment
-- **Interactivity** – Filters (Year, Region, Category), click-to-filter actions, navigation button
-- **Consistent Color Theme** – Professional, clean, minimal
-- **Storytelling Output** – PPT summary with business recommendations
-
----
-
-## 🛠️ How to Open
-1. Download [Tableau Public](https://public.tableau.com/app/discover).
-2. Open `workbook/sales_dashboard.twbx` in Tableau.
-3. Use filters (Year, Region, Category) to interact with the dashboard.
-
----
-
-## 📝 Insights Example
-- Sales have grown steadily YoY with seasonal peaks in Q4.
-- Technology products lead in sales, Furniture struggles with margins.
-- California dominates sales; Texas and South region underperform.
-- Consumer segment is the biggest driver of revenue.
-
----
-
-## 📌 Next Steps
-- Improve underperforming regions with targeted promotions.
-- Focus on high-growth product categories.
-- Strengthen corporate sales strategy.
-
----
+## How to reproduce
+- Open `data/SalesFinancial.csv` in Tableau.
+- Create calculated fields (see submission.md).
+- Build sheets as labeled and assemble dashboard.
